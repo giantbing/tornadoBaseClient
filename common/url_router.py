@@ -25,7 +25,6 @@ def url_wrapper(urls):
                 pattern, handle_class = handle
                 # 拼接url，新的url调用模块
                 wrap = ('{0}{1}'.format(path, pattern), handle_class)
-                print(["canshu:", wrap])
                 wrapper_list.append(wrap)
         else:
             wrapper_list.append((path, handles))
